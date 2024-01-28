@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.entrance {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.adminAuthDiv,
+.page-1-container {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+}
+
+.entrance-heading {
+    color: #484ec5;
+}
+
+.input-container {
+    margin-bottom: 20px;
+}
+
+input {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+button {
+    background-color: #484ec5;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 13px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 95%;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #2a2d79;
+}
+
+
+.adminControl{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #484ec5; /* You can change the background color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    bottom: 20px; 
+    right: 20px;
+}

@@ -1,0 +1,125 @@
+@media (min-width: 428px) {
+    .main {
+        font-family: 'Arial', sans-serif;
+        background-color: #f0f0f0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin-right: 20px;
+        height: 320px;
+    }
+
+    .circle {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        /* background-color: #3498db;  */
+        background-color: #2ecc71;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 15px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .percentage {
+        font-size: 24px;
+        font-weight: bold;
+        color: white;
+    }
+
+    .name {
+        font-size: 18px;
+        color: #333;
+        /* Dark gray color */
+    }
+
+    .applicatio-section {
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    label {
+        font-size: 16px;
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    input[type="date"],
+    input[type="file"] {
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    button {
+        background-color: #484ec5;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    button:hover {
+        background-color: #1c24c7;
+        /* Darker green on hover */
+    }
+
+    .student-info-display {
+        width: 100%;
+        /* border: 2px solid blue; */
+        font-weight: bold;
+        font-size: 1.2rem;
+        margin-top: 10px;
+    }
+
+
+
+    .notification {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        /* background-color: #4CAF50; */
+        background-color: #1c24c7;
+        color: white;
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 300px;
+    }
+
+    .notification h3 {
+        margin: 0;
+        font-size: 18px;
+    }
+
+    .notification button {
+        background-color: #1c24c7;
+        color: #fff;
+        border: none;
+        padding: 8px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+}

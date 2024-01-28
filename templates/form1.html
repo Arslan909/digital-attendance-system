@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAS</title>
+    <!-- <link rel="stylesheet" href="../static/css/attendence1.css"> -->
+    <link rel="stylesheet" href="../static/css/form.css">
+    <link rel="stylesheet" href="../static/css/responsiveAdmin.css">
+    <!-- <link rel="stylesheet" href="../static/css/authBox.css"> -->
+    <link rel="stylesheet" href="https://www.nerdfonts.com/assets/css/webfont.css">
+</head>
+
+<body>
+    <div class="main">
+
+        <div class="left" id="leftDiv">
+            <!-- <h1>arslan</h1> -->
+            <h1 id="class-name-display">ADMIN</h1>
+            <hr>
+            <div class="verticle-navbar">
+                <!-- <hr> -->
+                <div class="admin">
+                    <div class="section-btn">
+                        <button class="pin-gen-btn" id="pin-gen-btn"> <i class="nf nf-cod-new_file"></i>
+                            Generate pin</button>
+                        <button id="application-request"><i class="nf nf-cod-bell"></i>Application approval
+                            requests</button>
+                        <button id="Approved-applications"><i class="nf nf-md-notification_clear_all"></i>Approved
+                            applications</button>
+                        <button id="class-list"><i class="nf nf-oct-people"></i> Current classes list</button>
+                        <button id="Create-account"><i class="nf nf-md-clipboard_account_outline"></i> Create new
+                            account</button>
+                        <hr>
+                        <button class="button" id="logout"> <i class="nf nf-md-logout"></i> Logout</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="right" id="right">
+            <div class="form-report-container">
+                <button class="toggle-button" id="toggleButton"> > </button>
+                <h1 class="page-heading">Registration <i class="nf nf-md-clipboard_edit_outline"></i></h1>
+
+                <div class="body-part" id="body-part">
+                    <div class="form-side">
+                        <form id="myForm">
+                            <h4>Make a student entery manually</h3>
+                                <!-- <label for="name">Name:</label> -->
+                                <input type="text" id="name" name="name" placeholder="Student Name">
+
+                                <!-- <label for="rollNumber">Roll Number:</label> -->
+                                <input type="text" id="rollNumber" name="rollNumber" placeholder="Roll Number">
+
+                                <!-- <label for="CLASS">Class:</label> -->
+                                <input type="text" id="CLASS" name="CLASS" placeholder="Student Class" required>
+
+                                <button type="submit" id="submitBtn">Submit</button>
+                        </form>
+                        <form id="csvForm">
+                            <h4>Enter Csv file of student Information</h4>
+                            <input type="file" id="csvFile" accept=".csv" required/>
+                            <button type="button" id="upload-csvBtn">Upload CSV</button>
+                        </form>
+                        <a href="#" id="current-student-accounts">current student accounts</a>
+                        <a href="#" id="current-teachers-accounts">current teachers accounts</a>
+                    </div>
+
+                    <hr class="vertical-line">
+
+                    <div class="req-side" id="req-side">
+                        <div id="application-requests" class="application-requests"></div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/form.js') }}"></script>
+
+    <script>
+        function toggleLeftDiv() {
+            const leftDiv = document.getElementById('leftDiv');
+            const toggleButton = document.getElementById('toggleButton');
+            const screenWidth = window.innerWidth;
+
+            if (screenWidth <= 428) {
+                console.log('Current left value:', leftDiv.style.left);
+
+                if (leftDiv.style.left === '-60%' || leftDiv.style.left === '') {
+                    leftDiv.style.left = '0%';
+                    toggleButton.style.left = '60%';
+                    toggleButton.innerText = '<';
+                } else {
+                    leftDiv.style.left = '-60%';
+                    toggleButton.style.left = '0%';
+                    toggleButton.innerText = '>';
+                }
+
+                console.log('Updated left value:', leftDiv.style.left);
+            }
+        }
+
+        const toggleButton = document.getElementById('toggleButton');
+
+        // Show the toggle button only for screens with width <= 428px
+        if (window.matchMedia('(max-width: 428px)').matches) {
+            toggleButton.style.display = 'block';
+            toggleButton.addEventListener('click', toggleLeftDiv);
+        }
+    </script>
+</body>
+
+</html>

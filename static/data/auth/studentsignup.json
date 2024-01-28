@@ -1,0 +1,58 @@
+[
+    {
+        "name": "Muhammad Arslan Ahmad",
+        "username": "aran",
+        "password": "000",
+        "class": "bscs-m",
+        "rollnumber": "bscs-m-21-18"
+    },
+    {
+        "name": "Tahseen Haider",
+        "username": "cyberboy",
+        "password": "uwu",
+        "class": "bscs-m",
+        "rollnumber": "bscs-m-21-25"
+    },
+    {
+        "name": "test99",
+        "username": "test99",
+        "password": "test99",
+        "class": "bscs-m",
+        "rollnumber": "bscs-m-21-99"
+    },
+    {
+        "name": "Rehan Ahmad",
+        "username": "rehan",
+        "password": "111",
+        "class": "bscs-m",
+        "rollnumber": "bscs-m-21-4"
+    },
+    {
+        "name": "Taimoor Shaid",
+        "username": "mts",
+        "password": "mts",
+        "class": "bscs-m",
+        "rollnumber": "bscs-m-21-007"
+    },
+    {
+        "name": "student 1",
+        "username": "student1",
+        "password": "student1",
+        "class": "bscs-m3",
+        "rollnumber": "bscs-m-21-17"
+    },
+    {
+        "name": "Farhan Ahmad",
+        "username": "farhan",
+        "password": "farhan",
+        "class": "bscs-m",
+        "rollnumber": "bscs-m-21-06"
+    },
+    {
+        "name": "Muneeb g",
+        "username": "muneeb",
+        "password": "muneeb",
+        "class": "bscs-m",
+        "rollnumber": "bscs-m-21-02"
+    }
+]

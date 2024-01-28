@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/attendence1.css">
+    <link rel="stylesheet" href="../static/css/responsive.css">
+    <link rel="stylesheet" href="https://www.nerdfonts.com/assets/css/webfont.css">
+    <title>Main</title>
+</head>
+
+<body>
+    <div class="main">
+
+        <div class="left" id="leftDiv">
+            <!-- <h1>arslan</h1> -->
+            <h1 id="class-name-display">{{ class_name }}</h1>
+            <hr>
+            <div class="verticle-navbar">
+                <div class="teacher">
+
+                    <h2>Teacher Controls</h2>
+                    <div class="section-btn">
+
+                        <button class="button" id="Add/Edit Attendance"> <i
+                                class="nf nf-md-clipboard_check_outline"></i>
+                            Attendence </button>
+                        <button class="button" id="generate-report">
+                            <i class="nf nf-oct-graph"></i> Report
+                        </button>
+                    </div>
+                </div>
+                <!-- <hr> -->
+                <div class="admin">
+                    <div class="section-btn">
+                        <hr>
+                        <button class="button" id="logout">
+                            <i class="nf nf-md-logout"></i>
+                            Logout</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <div class="right">
+            <div id="attendance-page-container" class="attendance-page-container">
+                <button class="toggle-button" id="toggleButton"> > </button>
+                <h1 class="page-heading">Attendance <i class="nf nf-md-clipboard_check_outline"></i></h1>
+
+                <div class="attendance-register">
+                    <div class="date-btn">
+
+                        <input type="date" id="date">
+                        <button id="save-record">Save Attendance</button>
+
+                    </div>
+
+
+                    <table border="1">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Roll Number</th>
+                                <th>Class</th>
+                                <th>attendance</th>
+                            </tr>
+                        </thead>
+                        <tbody id="table-body">
+                        </tbody>
+                    </table>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+    <script src="/static/js/attendance1.js"></script>
+
+    <script>
+        function toggleLeftDiv() {
+            const leftDiv = document.getElementById('leftDiv');
+            const toggleButton = document.getElementById('toggleButton');
+            const screenWidth = window.innerWidth;
+
+            if (screenWidth <= 428) {
+                console.log('Current left value:', leftDiv.style.left);
+
+                if (leftDiv.style.left === '-60%' || leftDiv.style.left === '' ) {
+                    leftDiv.style.left = '0%';
+                    toggleButton.style.left = '60%';
+                    toggleButton.innerText = '<';
+                } else {
+                    leftDiv.style.left = '-60%';
+                    toggleButton.style.left = '0%';
+                    toggleButton.innerText = '>';
+                }
+
+                console.log('Updated left value:', leftDiv.style.left);
+            }
+        }
+
+        const toggleButton = document.getElementById('toggleButton');
+
+        // Show the toggle button only for screens with width <= 428px
+        if (window.matchMedia('(max-width: 428px)').matches) {
+            toggleButton.style.display = 'block';
+            toggleButton.addEventListener('click', toggleLeftDiv);
+        }
+    </script>
+</body>
+
+</html>

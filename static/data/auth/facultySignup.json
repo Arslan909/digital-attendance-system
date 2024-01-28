@@ -1,0 +1,16 @@
+[
+    {
+        "name": "teacher1",
+        "username": "teacher1",
+        "password": "teach",
+        "class": "bscs-m",
+        "rollnumber": ""
+    },
+    {
+        "name": "teacher2",
+        "username": "teacher2",
+        "password": "teach",
+        "class": "bscs-m3",
+        "rollnumber": ""
+    }
+]

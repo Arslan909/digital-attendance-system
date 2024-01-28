@@ -1,0 +1,126 @@
+/* Add this to your existing CSS */
+
+@media(max-width: 428px) {
+
+    .main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin: 20px 0;
+        width: 80%;
+        margin-top: 82%;
+    }
+
+    .circle {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        background-color: #2ecc71;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 15px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .percentage {
+        font-size: 18px;
+        font-weight: bold;
+        color: white;
+    }
+
+    .name {
+        font-size: 16px;
+        color: #333;
+    }
+
+    .applicatio-section {
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        width: 80%;
+    }
+
+    label {
+        font-size: 16px;
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    input[type="date"],
+    input[type="file"],
+    button {
+        width: 90%;
+        padding: 12px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    button {
+        width: 90%;
+        background-color: #484ec5;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    button:hover {
+        background-color: #1c24c7;
+    }
+
+    .student-info-display {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .notification {
+        position: fixed;
+        top: 10px;
+        right: 1px;
+        /* background-color: #4CAF50; */
+        background-color: #1c24c7;
+        color: white;
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 362px;
+    }
+
+    .notification h3 {
+        margin: 0;
+        font-size: 22px;
+    }
+
+    .notification button {
+        background-color: #1c24c7;
+        color: #fff;
+        border: none;
+        /* padding: 8px; */
+        border-radius: 5px;
+        cursor: pointer;
+        padding: 2px;
+        width: 20%;
+        margin-top: 16px;
+    }
+
+}

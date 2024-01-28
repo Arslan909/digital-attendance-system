@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Form Submission Result</h1>
+    <div id="result"></div>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Roll Number</th>
+                <th>Class</th>
+                <!-- <th></th> -->
+            </tr>
+        </thead>
+        <tbody id="table-body">
+        </tbody>
+    </table>
+ 
+    <script src="{{ url_for('static', filename='js/result.js') }}"></script>
+ </body>
+</html>

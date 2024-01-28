@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/profile.css">
+    <link rel="stylesheet" href="../static/css/profile_responsive.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <h1>here we will show the info of student who log in</h1> -->
+    <div class="main">
+
+        <div class="card" id="card">
+            <div class="circle" id="circle">
+                <div class="percentage" id="percentage"></div>
+            </div>
+            <div class="student-info-display">
+                <div class="name" id="name"></div>
+                <div class="class" id="class"></div>
+                <div class="rollnumber" id="rollnumber"></div>
+                <button id="logout" class="logout">logout</button>
+            </div>
+        </div>
+    
+        <div class="applicatio-section">
+            <h3>Apply for leave</h3>
+            <form id="uploadForm" action="/submit_application" method="POST" enctype="multipart/form-data">
+    
+                <label for="date_from">leave start date</label>
+                <input type="date" name="date_from" id="date_from" required>
+    
+                <label for="date_to">leave end date</label>
+                <input type="date" name="date_to" id="date_to" required>
+    
+                <br>
+                <br>
+    
+                <label for="applicationFile">Upload Application: </label>
+                <input type="file" name="applicationFile" accept=".doc, .docx, .pdf" id="applicationFile" required>
+    
+                <button type="submit" id="appli-submit">apply for leave </button>
+            </form>
+            <div class="notfication-display-part">
+    
+                <div class="noti-div" id="noti-div"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/static/js/profile.js"></script>
+</body>
+
+</html>
