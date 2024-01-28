@@ -12,7 +12,7 @@ a web site to digitize the conventional school/university attendance system
 `password: 000`
 
 - Admin login
-`admin pin: 123`
+`admin pin: 1234`
 
 ## Demo 
 
