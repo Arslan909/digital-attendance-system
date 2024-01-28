@@ -13,3 +13,7 @@ a web site to digitize the conventional school/university attendance system
 
 - Admin login
 `admin pin: 123`
+
+## Demo 
+
+https://jamesaran.pythonanywhere.com/
